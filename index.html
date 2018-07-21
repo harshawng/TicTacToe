@@ -1,0 +1,63 @@
+<!Doctype HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+  <title>ClickGame by:Harshawn</title> <!-created 2018-06-13->
+    <script type="text/javascript" src="game.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap CDN, or contact delivery network -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <link rel="stylesheet" type="text/css" href="game.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="120x120" href="jean%20.png">
+</head>
+<body>
+    
+    
+<!-navigation bar->
+<div class="topnav" id="myTopnav">
+        <a href="login.html" >Home</a>
+        <a href="index.html" class="active">Play</a> 
+        <a href="javascript:void(0);" style="font-size:15px;"  class="icon" onclick="myFunction()">&#9776;</a>
+        <div class="jean"> <img id="logo" src="jean%20.png" /></div>
+</div>
+    
+    <span id="content"> <ul>-The object of Tic Tac Toe is to get three in a row.</ul>  <ul>-Players alternate placing markers on the game board until either oppent has three in a row or all nine squares are filled.</ul>  </span>
+<div>
+<table >
+  <tr >
+    <td id="00" class="cell" onClick="clickBox(0,0);"></td>
+    <td id="01" class="cell" onClick="clickBox(0,1);"></td>
+    <td id="02" class="cell" onClick="clickBox(0,2);"></td>
+  </tr>
+    <tr>
+    <td id="10" class="cell" onClick="clickBox(1,0);"></td>
+    <td id="11" class="cell" onClick="clickBox(1,1);"></td>
+    <td id="12" class="cell" onClick="clickBox(1,2);"></td>
+  </tr>
+    <tr>
+    <td id="20" class="cell" onClick="clickBox(2,0);"></td>
+    <td id="21" class="cell" onClick="clickBox(2,1);"></td>
+    <td id="22" class="cell" onClick="clickBox(2,2);"></td>
+  </tr>
+  </table>
+  </div>
+	<input class= "btn btn-warning" id="reset" type=button onClick="reset();" value="Again">
+    <br/> <br/>
+    <button  class="btn btn-danger" id="happy"  >  <img id="logo" src="happy.png" />  </button>
+    <button  class="btn btn-success" id="sad"  >  <img id="logo" src="sad.png" />  </button>
+    
+    
+  <br/><br/>
+    <input class="btn btn-danger" id="output1" type="button"  value="0" />
+    <input class="btn btn-success" type="button" id="output2"  value="0" />
+    
+    <h6>  © 2018 Harshawn Grewal</h6>
+</body>
+</html>
